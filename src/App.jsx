@@ -47,7 +47,7 @@ const App = () => {
         </Toolbar>
       </AppBar>
     </Box>
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex' , flexWrap: 'wrap',justifyContent: 'center'}}>
       {columns}
     </div>
     </div>
