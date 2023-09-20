@@ -7,7 +7,7 @@ const Col = ({ title, tasks, onTaskMove }) => {
   const [, drop] = useDrop({
     accept: 'TASK',
     drop: (item) => {
-      onTaskMove(item, title); // Update the task status when dropped
+      onTaskMove(item, title); 
     }
   });
 
