@@ -5,9 +5,10 @@
 #### Table: Stages
 ## API Endpoint for Stages:
 POST /api/boards/{boardId}/stages: This endpoint will allow a user to create a new stage for a specific board.
+
 PUT /api/boards/{boardId}/stages/{stageId}: This endpoint will allow a user to edit an existing stage for a specific board.
-Tables and API Endpoints to Update:
-Table: Boards
+## Tables and API Endpoints to Update:
+## Table: Boards
 ## API Endpoint for Boards:
 PUT /api/boards/{boardId}: This endpoint will need to be updated to allow users to modify the stages associated with a board.
 ## Explanation:
@@ -15,15 +16,17 @@ With this change, users can now create and customise the stages for their task b
 
 # Scenario: Users can comment on tasks
 ## Tables and API Endpoints to Add:
-## Table: Comments
+# Table: Comments
 ## API Endpoint for Comments:
 POST /api/tasks/{taskId}/comments: This endpoint will allow a user to add a comment to a specific task.
 ## Tables and API Endpoints to Update:
 ## Table: Tasks
 API Endpoint for Tasks:
 GET /api/tasks/{taskId}: This endpoint will need to be updated to include the comments associated with a task.
+
 Explanation:
-In this scenario, users can now add comments to tasks. To facilitate this, a new Comments table will be added to store comments associated with tasks. The API endpoint POST /api/tasks/{taskId}/comments will allow users to add comments to a specific task. Additionally, the GET /api/tasks/{taskId} endpoint will need to be updated to include the comments associated with a task, providing users with access to task-related comments.
+In this scenario, users can now add comments to tasks. To facilitate this, a new Comments table will be added to store comments associated with tasks. 
+The API endpoint POST /api/tasks/{taskId}/comments will allow users to add comments to a specific task. Additionally, the GET /api/tasks/{taskId} endpoint will need to be updated to include the comments associated with a task, providing users with access to task-related comments.
 # Error Handling:
 For error handling, the application can implement the following :
 1. Use appropriate HTTP status codes to indicate the success or failure of an API request.
